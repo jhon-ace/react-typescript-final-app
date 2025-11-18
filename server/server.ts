@@ -105,7 +105,7 @@ app.post("/departments", async (req, res) => { //Create departments
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
-export default app;
+app.listen(4000, () => console.log("Server running on http://localhost:4000"));
 
 
 
