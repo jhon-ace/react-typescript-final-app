@@ -14,6 +14,8 @@ const db = mysql.createPool({
   database: "railway",
 });
 
+console.log(db);
+
 const client = new OAuth2Client("24288542269-6pqqvu7pc5s9ugtqpjfmul6d5tm6kj8a.apps.googleusercontent.com");
 
 // === Existing username/password login ===
