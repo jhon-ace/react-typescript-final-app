@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createPool({
-  host: "containers-mysql.railway.internal.railway.app",
+  host: "mysql.railway.internal",
   port: 3306,
   user: "root",
   password: "AfPcvPWHYxmwqGaiqMAWsQkFAAQQPhvN",
@@ -105,7 +105,7 @@ app.post("/departments", async (req, res) => { //Create departments
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
-app.listen(4000, () => console.log("Server running on http://localhost:4000"));
+export default app;
 
 
 
