@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createPool({
-  host: "mysql.railway.internal",
+  host: "containers-mysql.railway.internal.railway.app",
   port: 3306,
   user: "root",
   password: "AfPcvPWHYxmwqGaiqMAWsQkFAAQQPhvN",
