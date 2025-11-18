@@ -37,7 +37,7 @@ app.post("/login", async (req, res) => {
     }
   } catch (error) {
     console.error("Error during login:", error);
-    res.status(500).json({ success: false, message: "Server error" });
+    res.status(500).json({ success: false, message: "Server errorf" });
   }
 });
 
@@ -75,7 +75,7 @@ app.post("/google-login", async (req, res) => {
     });
   } catch (error) {
     console.error("Google login error:", error);
-    res.status(500).json({ success: false, message: "Server error" });
+    res.status(500).json({ success: false, message: "Server errorg" });
   }
 });
 
@@ -86,7 +86,7 @@ app.get("/departments", async (_req, res) => {
     res.json(rows);
   } catch (error) {
     console.error("Error fetching departments:", error);
-    res.status(500).json({ message: "Server error" });
+    res.status(500).json({ message: "Server errorh" });
   }
 });
 
