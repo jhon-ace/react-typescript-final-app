@@ -9,7 +9,7 @@ app.use(express.json());
 
 const db = mysql.createPool({
   host: "caboose.proxy.rlwy.net", // Railway public host
-  port: 18511,                     // Railway public port
+  port: 3306,                     // Railway public port
   user: "root",                     // your Railway MySQL user
   password: "AfPcvPWHYxmwqGaiqMAWsQkFAAQQPhvN",
   database: "railway",
