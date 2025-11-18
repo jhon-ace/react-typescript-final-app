@@ -27,7 +27,7 @@ export default function Login() {
       }
     } catch (error) {
       console.error("Login error:", error);
-      setMessage("Server error");
+      setMessage("Server errors");
     }
   };
 
