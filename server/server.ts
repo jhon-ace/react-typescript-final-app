@@ -41,6 +41,11 @@ app.post("/login", async (req, res) => {
   }
 });
 
+app.get("/", (_req, res) => {
+  res.send("API is running! Use /departments, /login, /google-login etc.");
+});
+
+
 // === Google login route ===
 app.post("/google-login", async (req, res) => {
   const { token } = req.body;
