@@ -8,13 +8,11 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createPool({
-  host: "mysql.railway.internal",
-  port: 3306,
+  host: "localhost",
   user: "root",
   password: "AfPcvPWHYxmwqGaiqMAWsQkFAAQQPhvN",
-  database: "railway",
+  database: "typescript2",
 });
-
 
 const client = new OAuth2Client("24288542269-6pqqvu7pc5s9ugtqpjfmul6d5tm6kj8a.apps.googleusercontent.com");
 
